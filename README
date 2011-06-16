@@ -1,0 +1,59 @@
+/* 
+* Part of Nitriques Solutions inc. (http://www.nitriques.com) jQuery plug-in bundle
+* 
+* Use this plugin to automatically switch css class on root element in order to accomodate differents
+* screen resolution.
+* 
+* Usage $.ntr$fontSize(opts);
+* 
+* options w and h always means that the css class will be applied if the resolution is less than mention
+* 
+* Examples:
+* 
+* 1- Default:      ****  resulting css will be 'resolution-w1024'
+* 		$.ntr$resolution({
+* 			res: [
+* 				{w:1024}
+* 			]
+* 		});
+* 
+* 2- With options: 
+* 		$.ntr$resolution({
+*           res: [
+* 				{w:1024}
+* 			],
+*           prefix: 'my-resolution', // css prefix class
+*           root: '#my-root' 		// root DOM element that gets the css class
+* 		});
+* 
+* 4- With width and height resolution options:  ****  resulting css will be 'resolution-w1024-h720'
+* 		$.ntr$resolution({
+* 			res: [
+* 				{w:1024, h:720}
+* 			]
+* 		});
+* 
+* 4- With multiple resolution options:  ** NOTE they must be in ASC order
+* 		$.ntr$resolution({
+* 			res: [
+* 				{w:1024, h:720},  //****  resulting css will be 'resolution-w1024-h720'
+* 				{w:1024},         //****  resulting css will be 'resolution-w1024'
+* 				{w:1200},         //****  resulting css will be 'resolution-w1200'
+*               {h:900},          //****  resulting css will be 'resolution-h900'
+* 			]
+* 		});
+* 
+* Liscence under the The Code Project Open License (CPOL)
+* http://www.codeproject.com/info/cpol10.aspx
+
+* Name: jquery.resolution.js
+* Date: 2011-06-16
+* Version: 1.0
+
+* Pre-requisites: none;
+
+* 
+* Version 1.0
+* 	Initial version
+
+*/
